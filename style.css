@@ -25,11 +25,12 @@ button {
     background-color: darkblue;
     border-color: lightblue;
     margin: 3;
-    padding: 11;
+    padding: 50;
+    align-content: center;
+    position: inherit;
     color: white;
-    height: 50px;
+    height: 41px;
     width: 100px;
-    text-anchor: end;
 }
 * {
   margin: 0;
