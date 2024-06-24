@@ -8,10 +8,13 @@ body {
   color: lightblue;
 }
 h1 {
-  color: lightblue;
-  text-align: left;
-  margin-bottom: 19px;
-  padding: 0;
+    color: lightblue;
+    text-align: justify;
+    margin-bottom: 19px;
+    padding-top: 11px;
+    padding-left: 24px;
+    width: 75%;
+    height: 53px;
 }
 p {
     width: 78%;
@@ -21,17 +24,46 @@ p {
 button {
     border-radius: 19px
 }
-.redirect {
-    background-color: blue;
-    border-color: lightblue;
-    margin: 3;
-    padding: 50;
-    align-content: center;
-    position: inherit;
-    color: white;
-    height: 41px;
-    width: 100px;
+.button:not(:hover) {
+    padding: 6px;
+    --aug-inlay: initial;
+    --aug-inlay-all: 2px;
+    --aug-inlay-bg: radial-gradient(darkblue,black);
+    --aug-inlay-opacity: 2;
+    --aug-border: initial;
+    --aug-border-all: 5px;
+    
+    --aug-clip-tr1: initial;
+    --aug-tr1: 10px;
+    --aug-clip-bl1: initial;
+    --aug-bl1: 10px;
+
 }
+.button:hover {
+    padding: 6px;
+    --aug-inlay: initial;
+    --aug-inlay-all: 2px;
+    --aug-inlay-bg: radial-gradient(black,darkblue);
+    --aug-inlay-opacity: 2;
+    --aug-border: initial;
+    --aug-border-all: 5px;
+    
+    --aug-clip-tl1: initial;
+    --aug-tl1: 10px;
+    --aug-clip-br1: initial;
+    --aug-br1: 10px;
+
+}
+.pitch-mixin {
+    --aug-clip-tr: initial;
+    --aug-b-extend1: 50%;
+    --aug-border-all: 8px;
+    --aug-border-bg: radial-gradient(
+      at top, blue 53%, transparent 88%);
+    --aug-inlay-all: 7px;
+    --aug-inlay-bg: radial-gradient(blue, darkblue);
+    --aug-inlay-opacity: 0.4;
+  }
 * {
   margin: 0;
   padding: 0;
