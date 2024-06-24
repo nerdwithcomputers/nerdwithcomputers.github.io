@@ -12,54 +12,59 @@ h1 {
     text-align: justify;
     margin-bottom: 19px;
     padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 24px;
+    padding-right: 24px;
     width: 75%;
-    height: 53px;
+    word-wrap: break-word;
+    height: auto;
 }
-p {
+.maintext {
     width: 78%;
-      margin-bottom: 19px;
-
+    margin-bottom: 19px;
+    padding: 10px;
+    --aug-border: initial;
+    --aug-border-all: 6px;
+    --aug-border-bg: blue;
+    --aug-inlay-all: 5px;
+    --aug-inlay-bg: radial-gradient(blue, darkblue);
+    --aug-inlay-opacity: 2;
+    --aug-clip-tr1: initial;
+    --aug-tr1: 22px;
+    
+    
 }
 button {
     border-radius: 19px
 }
-.button:not(:hover) {
+.button{
     padding: 6px;
+    color: blue;
     --aug-inlay: initial;
     --aug-inlay-all: 2px;
-    --aug-inlay-bg: radial-gradient(darkblue,black);
     --aug-inlay-opacity: 2;
     --aug-border: initial;
     --aug-border-all: 5px;
-    
+}
+.button:not(:hover) {
+    --aug-inlay-bg: radial-gradient(darkblue,black);
     --aug-clip-tr1: initial;
     --aug-tr1: 10px;
     --aug-clip-bl1: initial;
     --aug-bl1: 10px;
-
 }
 .button:hover {
-    padding: 6px;
-    --aug-inlay: initial;
-    --aug-inlay-all: 2px;
     --aug-inlay-bg: radial-gradient(black,darkblue);
-    --aug-inlay-opacity: 2;
-    --aug-border: initial;
-    --aug-border-all: 5px;
-    
     --aug-clip-tl1: initial;
     --aug-tl1: 10px;
     --aug-clip-br1: initial;
     --aug-br1: 10px;
-
 }
 .pitch-mixin {
     --aug-clip-tr: initial;
-    --aug-b-extend1: 50%;
     --aug-border-all: 8px;
     --aug-border-bg: radial-gradient(
-      at top, blue 53%, transparent 88%);
+      at top, blue 75%, transparent 96%);
     --aug-inlay-all: 7px;
     --aug-inlay-bg: radial-gradient(blue, darkblue);
     --aug-inlay-opacity: 0.4;
