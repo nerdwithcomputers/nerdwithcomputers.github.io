@@ -9,42 +9,45 @@ body {
 }
 h1 {
     color: lightblue;
-    text-align: justify;
+    text-align: left;
     margin-bottom: 19px;
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 24px;
     padding-right: 24px;
-    width: 75%;
     word-wrap: break-word;
     height: auto;
 }
 .maintext {
-    width: 78%;
     margin-bottom: 19px;
     padding: 10px;
     --aug-border: initial;
     --aug-border-all: 6px;
     --aug-border-bg: blue;
-    --aug-inlay-all: 5px;
-    --aug-inlay-bg: radial-gradient(blue, darkblue);
-    --aug-inlay-opacity: 2;
     --aug-clip-tr1: initial;
     --aug-tr1: 22px;
-    
-    
 }
+
+@media(orientation: landscape){
+    html{ width: 50% }
+}
+@media(orientation: portrait){
+    html{ width: auto }
+}
+
 button {
     border-radius: 19px
 }
 .button{
+    text-decoration-color: aqua;
     padding: 6px;
-    color: blue;
+    color: aqua;
     --aug-inlay: initial;
     --aug-inlay-all: 2px;
     --aug-inlay-opacity: 2;
     --aug-border: initial;
     --aug-border-all: 5px;
+    --aug-border-bg: blue;
 }
 .button:not(:hover) {
     --aug-inlay-bg: radial-gradient(darkblue,black);
@@ -68,7 +71,19 @@ button {
     --aug-inlay-all: 7px;
     --aug-inlay-bg: radial-gradient(blue, darkblue);
     --aug-inlay-opacity: 0.4;
-  }
+}
+.maincontainer{
+    display: flexbox;
+}
+.projcontainer{
+    display: flexbox;
+    padding: 10px;
+    --aug-border: initial;
+    --aug-border-all: 7px;
+    --aug-border-bg: darkblue;
+    --aug-scoop-tr1: initial;
+    --aug-tr1: 37px;
+}
 * {
   margin: 0;
   padding: 0;
