@@ -21,10 +21,14 @@ h1 {
 }
 
 @media(orientation: landscape){
-    html{ width: 50% }
+    .title{ width: 50%}
+    .maintext{ width: 50% }
+    .projcontainer{ width: 25%}
 }
 @media(orientation: portrait){
-    html{ width: auto }
+    .title{ width: auto}
+    .maintext{ width: auto}
+    .projcontainer{ width: auto}
 }
 
 button {
@@ -56,7 +60,7 @@ button {
     --aug-clip-br1: initial;
     --aug-br1: 10px;
 }
-.pitch-mixin {
+.title {
     --aug-clip-tr: initial;
     --aug-border-all: 8px;
     --aug-border-bg: radial-gradient(
@@ -76,16 +80,18 @@ button {
 .projcontainer{
     display: grid;
     padding: 20px;
+    margin: 12px;
     --aug-border: initial;
     --aug-border-all: 7px;
     --aug-border-bg: darkblue;
     --aug-clip-tr1: initial;
+    --aug-tr1-clipmod-x: -7;
     --aug-tr1: 37px;
 }
 .projtitle{
     margin-bottom: 5;
     padding-left: 0;
-    padding-right: 10px;
+    margin-right: 35px;
     --aug-border: initial;
     --aug-border-bg: darkblue;
     --aug-clip-tr1: initial;
