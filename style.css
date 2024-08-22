@@ -9,14 +9,6 @@ body {
 }
 h1 {
     color: lightblue;
-    text-align: left;
-    margin-bottom: 19px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 24px;
-    padding-right: 24px;
-    word-wrap: break-word;
-    height: auto;
 }
 .maintext {
     margin-bottom: 19px;
@@ -38,6 +30,7 @@ h1 {
 button {
     border-radius: 19px
 }
+
 .button{
     text-decoration-color: aqua;
     padding: 6px;
@@ -71,18 +64,32 @@ button {
     --aug-inlay-all: 7px;
     --aug-inlay-bg: radial-gradient(blue, darkblue);
     --aug-inlay-opacity: 0.4;
-}
-.maincontainer{
-    display: flexbox;
+    text-align: left;
+    margin-bottom: 19px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 24px;
+    padding-right: 24px;
+    word-wrap: break-word;
+    height: auto;
 }
 .projcontainer{
-    display: flexbox;
-    padding: 10px;
+    display: grid;
+    padding: 20px;
     --aug-border: initial;
     --aug-border-all: 7px;
     --aug-border-bg: darkblue;
-    --aug-scoop-tr1: initial;
+    --aug-clip-tr1: initial;
     --aug-tr1: 37px;
+}
+.projtitle{
+    margin-bottom: 5;
+    padding-left: 0;
+    padding-right: 10px;
+    --aug-border: initial;
+    --aug-border-bg: darkblue;
+    --aug-clip-tr1: initial;
+    --aug-tr1: 10px
 }
 * {
   margin: 0;
